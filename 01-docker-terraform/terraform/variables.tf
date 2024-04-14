@@ -1,3 +1,8 @@
+variable "credentials" {
+    description = "My credentials"
+    default = "./keys/gcp.json"
+}
+
 variable "location" {
     description = "Project location"
     default = "EU"

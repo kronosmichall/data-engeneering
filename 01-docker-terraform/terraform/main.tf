@@ -8,6 +8,7 @@ terraform {
 }
 
 provider "google" {
+  credentials = file(var.credentials)
   project = var.gcs_project
   region  = var.precise_location
   zone    = var.precise_zone
